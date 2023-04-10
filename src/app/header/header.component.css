@@ -1,0 +1,70 @@
+
+.topbar{
+    height:48px;
+    padding: 0;
+}
+.topbar .navbar-nav .nav-item .nav-link,.top-sec-bar .navbar-nav .nav-item .nav-link{
+    color:white
+}
+.top-sec-bar{
+    background-image: url(../../assets/images/banner.jpg);   
+     margin-top: -34px;
+    min-height: 734px;
+    padding-top: 34px; 
+    background-size: cover;
+}
+.topbar button{   
+    font-weight: 500;
+}
+
+.navbar-toggler:focus,.navbar-toggler:active,.navbar-toggler:visited{
+    box-shadow: none;
+    color:rgba(255,255,255,1)
+}
+.topbar .navbar-toggler{
+    border: 0;
+    color:rgba(255,255,255,0.6)
+} 
+.topbar .nav-link{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    font-size: 0.876rem;
+}
+
+@media(max-width:992px){ 
+    .top-sec-bar .navbar-collapse{
+        background: #117bd4;
+        border-radius: 6px;
+        padding: 0 1rem;
+        margin-top: 1rem;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        min-width: 200px;
+    }
+    .topbar .navbar-collapse{
+        position: absolute;
+        top: 58px;
+        background: #117bd4;
+        padding: 0.5rem 1rem;
+        z-index: 1;
+        border-radius: 4px;
+    }
+    .topbar .navbar-collapse svg{
+        height: 20px;
+    }
+   
+}
+@media(min-width:992px){ 
+    .top-sec-bar .navbar-nav .nav-item .nav-link{
+        color:rgba(255,255,255,0.5)
+    }
+    .topbar .navbar-nav{
+        gap:60px;
+    }
+    .top-sec-bar .navbar-nav .nav-item .nav-link:hover{
+        color:rgba(255,255,255,1)
+    }
+}
+ 

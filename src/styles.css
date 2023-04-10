@@ -1,0 +1,95 @@
+:root{
+    --bs-primary-rgb: 17, 123, 212;
+    --primary: #117bd4;
+}
+.navbar{
+    
+    --bs-navbar-toggler-padding-y: 0;
+    --bs-navbar-toggler-padding-x: 0; 
+    --bs-navbar-brand-color:rgba(255, 255, 255, 1);
+    --bs-navbar-color: rgba(255, 255, 255, 1);
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--primary);
+    --bs-btn-border-color: #0d6efd;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+.accordion{ 
+    --bs-accordion-btn-color: #11142D;
+    --bs-accordion-bg: #F7F8FC;
+    --bs-accordion-active-bg:#F7F8FC;
+    --bs-accordion-border-radius: 0;
+    --bs-accordion-inner-border-radius: 0; 
+    --bs-accordion-btn-padding-x: 30px; 
+    --bs-accordion-body-padding-y: 17px;
+    --bs-accordion-body-padding-x: 30px;
+    --bs-accordion-btn-icon-transform: rotate(0deg);
+    --bs-accordion-btn-icon:url(../src/assets/images/chevron.svg);
+    --bs-accordion-btn-active-icon:url(../src/assets/images/chevron-active.svg);
+    --bs-accordion-btn-focus-box-shadow: inset 7px 0 rgb(1 58 101 / 40%);
+} 
+.accordion .accordion-header,.accordion-button{
+    min-height: 78px;
+   
+    color: #11142D;
+    gap:30px; 
+    box-shadow: inset 7px 0 rgb(1 58 101 / 40%);
+}
+.accordion-button::after{
+    background-position: center;
+}
+.accordion svg{
+    width: 40px;
+}
+.accordion-button:not(.collapsed){
+    color: inherit;
+     box-shadow: inset 7px 0 #013A65;
+}
+.accordion-item{
+    margin-bottom: 20px;    
+}
+.accordion-body{
+    background: white;
+    display: flex;
+    align-items: center;
+    gap:29px;
+    font-size: 16px;
+    line-height: 20px;  
+    box-shadow: inset 7px 0 rgb(1 58 101 / 40%);
+    color: #9A9AB0;
+}
+.accordion-item{
+    border:0
+}
+@media (min-width: 1200px){
+    h1, .h1 {
+        font-size: 42px;
+    }
+    h2,.h2{  
+        font-size: 39px;
+        color: #11142D; 
+    }
+}
+@media (min-width: 1200px){
+    .accordion .accordion-header,.accordion-button{
+        min-height: 78px;
+        font-size: 26px; 
+        color: #11142D;
+        gap:30px; 
+        box-shadow: inset 7px 0 rgb(1 58 101 / 40%);
+    }
+}
+@import 'bootstrap/dist/css/bootstrap.css';
+
+/* You can add global styles to this file, and also import other style files */

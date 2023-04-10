@@ -1,0 +1,86 @@
+.ewssection{ 
+        padding:172px 0 213px 0;
+        background: #F5F5F5; 
+}
+
+.ewslist li{
+    width: 400px;
+    flex:1 0 400px;
+    min-height: 496px;
+    background: white;
+    box-shadow: 0px 28px 52px rgba(0, 61, 113, 0.2);
+    padding:80px 32px 60px 32px;
+    z-index: 1;
+}
+.ewslist li:hover{
+    background: #117BD4;
+    color: white;
+}
+.ewslist li:hover span{ 
+    color: #117BD4; 
+    background-color: white; 
+}
+.ewslist li:hover h4{ 
+    color:white
+}
+.ewslist li span{
+    height: 66px;
+    width:66px;
+    border-radius: 50%; 
+    font-weight: 700;
+    color: white;
+    font-size: 30px;
+    background-color: #117BD4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.875rem;
+
+}
+
+.ewslist li h4{
+    margin-bottom: 1rem;
+    color:#11142D
+}
+.ornament,.ornament2{
+    position: absolute;
+    z-index: 0;
+}
+.ornament{
+    left: -4rem;
+    top: 0.5rem;
+    transform: translate(0,0);
+}
+.ornament2{
+    right: -4rem;
+    top: 0;
+    transform: translate(0,0);
+}
+.essayscroll .ewslist{
+    overflow-x: scroll;
+    padding:100px 50px 20px;
+    z-index: 1; 
+    margin: 0 -3rem;
+}
+/* width */
+.essayscroll .ewslist::-webkit-scrollbar {
+    /* width: 2px; */
+    height: 5px;
+  }
+  
+  /* Track */
+  .essayscroll .ewslist::-webkit-scrollbar-track {
+    background: #E5E5E5;
+      border-radius:4px
+  }
+  
+  /* Handle */
+  .essayscroll .ewslist::-webkit-scrollbar-thumb {
+    background:#117BD4;
+      border-radius:4px
+  }
+  
+  /* Handle on hover */
+  .essayscroll .ewslist::-webkit-scrollbar-thumb:hover {
+    background: #117BD4;
+  }
